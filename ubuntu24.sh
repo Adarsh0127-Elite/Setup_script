@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update && sudo apt upgrade -y && sudo apt install byobu -y && sudo apt install neofetch -y && sudo apt install zram-tools -y && echo -e "ALGO=zstd\nPERCENT=100" | sudo tee -a /etc/default/zramswap && sudo service zramswap reload && sudo apt update && sudo apt install openssh-server screen python3 python-is-python3 git default-jdk adb fastboot bc bison \
+sudo apt update && sudo apt upgrade -y && sudo apt install python3-pip -y && sudo pip3 install gdown --break-system-packages && sudo apt install byobu -y && sudo apt install neofetch -y && sudo apt install zram-tools -y && echo -e "ALGO=zstd\nPERCENT=100" | sudo tee -a /etc/default/zramswap && sudo service zramswap reload && sudo apt update && sudo apt install openssh-server screen python3 python-is-python3 git default-jdk adb fastboot bc bison \
 build-essential curl flex g++-multilib gcc-multilib gnupg gperf imagemagick lib32ncurses-dev \
 lib32readline-dev lib32z1-dev liblz4-tool libncurses-dev libsdl1.2-dev libssl-dev \
 libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc yasm zip zlib1g-dev \
